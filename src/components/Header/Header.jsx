@@ -1,5 +1,4 @@
 import { HeaderContainer,} from './styled'
-import { Link } from "react-scroll";
 
 function Header() {
 
