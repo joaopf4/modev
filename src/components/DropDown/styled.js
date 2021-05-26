@@ -16,6 +16,9 @@ export const NavColumn = styled.nav `
   margin: 7.3rem 3rem; 
   padding: 1rem 2rem;
   border-bottom: ${theme.lightBlue};
+  @media(max-width: 600px){
+    margin: 6.3rem 1rem;
+  }
   ul {
     max-width: 100%;
     height: 100%;

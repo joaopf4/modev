@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import {theme} from "../../theme"
 
 export const SectionContainer = styled.section `
-    width: 90%;
+    width: 100%;
     height: 600px;
     display: flex;
     align-items: center;
@@ -12,14 +12,26 @@ export const SectionContainer = styled.section `
 `
 export const SectionGrid = styled.div `
     display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     width: 100%;
     height: 100%;
+    cursor: pointer;
+
     div{
         display: flex;
         align-items: center;
+        flex-direction: column;
         justify-content: center; 
         background-color:  ${theme.lightOrange};
+        transition: transform 1s;
+        :hover{
+            transform: translateY(-10px);
+        }
+        img {
+            width: 100%;
+        }
+        strong {
+            padding: 1rem;
+        }
     }
 `

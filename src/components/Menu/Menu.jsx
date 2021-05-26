@@ -6,7 +6,6 @@ function Menu() {
   const [hambDisplay, setHambDisplay] = useState(false)
   const toogleHambDisplay = () => {
     setHambDisplay((prevState) => !prevState)
-    console.log(hambDisplay)
   }
 
   return (

@@ -16,7 +16,7 @@ function App() {
       <Menu/>
       <Hero bgColor={theme.lowpacityBlue}/>
       <Section/>
-      <Section/>
+
     </Body>
   );
 }
