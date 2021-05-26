@@ -5,7 +5,8 @@ import DropDown from '../DropDown';
 function Menu() {
   const [hambDisplay, setHambDisplay] = useState(false)
   const toogleHambDisplay = () => {
-    setHambDisplay(!hambDisplay)
+    setHambDisplay((prevState) => !prevState)
+    console.log(hambDisplay)
   }
 
   return (
@@ -17,7 +18,7 @@ function Menu() {
           <MenuIcon3 open={hambDisplay}></MenuIcon3>
         </HambIcon>
       </MenuBox>
-      <DropDown open={hambDisplay}/>
+      <DropDown open={hambDisplay} close={() => toogleHambDisplay()}/>
     </Header>
   );
 }
