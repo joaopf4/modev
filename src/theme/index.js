@@ -28,7 +28,8 @@ export const theme = {
   lightOrange: "#f3d7b6",
   orange: "#f2b33e",
   jeans:"#5b83a6",
-  creamWhite: "#f2f2f2"
+  creamWhite: "#f2f2f2",
+  boxShadow: "0px 1px 10px #aaaaaa;"
 }
 
  
