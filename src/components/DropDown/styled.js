@@ -6,16 +6,20 @@ export const NavColumn = styled.nav `
   background-color: transparent;
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear;
+  background-color: transparent;
+  transition: background-color 1s, visibility 0s, opacity 0.5s linear;
   ${ props => props.open && css `
     opacity: 1;
     visibility: visible;
+    background-color: blue;
   `};
   position: fixed;
   right: 0px;
+  top: 0px;
   margin: 7.3rem 3rem; 
   padding: 1rem 2rem;
   border-bottom: ${theme.lightBlue};
+  z-index: 1;
   @media(max-width: 600px){
     margin: 6.3rem 1rem;
   }

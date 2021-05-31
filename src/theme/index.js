@@ -14,6 +14,7 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
   }
   * {
+    color: white;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
   }

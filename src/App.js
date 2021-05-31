@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Menu from './components/Menu';
+import Header from './components/Header';
 import Hero from './components/Hero';
 import Section from './components/Section';
 import {theme} from './theme'
@@ -13,7 +13,7 @@ const Body = styled.div `
 function App() {
   return (
     <Body>
-      <Menu/>
+      <Header/>
       <Hero bgColor={theme.lowpacityBlue}/>
       <Section/>
 

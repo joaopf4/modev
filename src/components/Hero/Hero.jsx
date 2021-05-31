@@ -1,10 +1,12 @@
-import { HeroContainer,} from './styled'
+import { HeroContainer, HeroTitle} from './styled'
 
 function Hero({id}) {
 
   return (
     <HeroContainer id={id}>
-      Hero
+      <HeroTitle>
+        Hero
+      </HeroTitle>
     </HeroContainer>
   );
 }
