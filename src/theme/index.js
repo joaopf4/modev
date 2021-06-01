@@ -21,8 +21,8 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 export const theme = {
-  white: "#fffffb",
-  lowpacityBlue: "rgba(78, 164, 217, 0.38)",
+  secondaryGray: "#5a5a5a",
+  primaryBlack: "#282828",
   mediumpacityBlue: "rgba(0, 67, 108, 0.64)",
   darkBlue: "#012940",
   lightBlue: "#4ea4d9",

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import HeroImg from '../../assets/hero/main_full.jpg'
 import {theme} from "../../theme";
 
 export const HeroContainer = styled.section `
@@ -8,7 +9,7 @@ export const HeroContainer = styled.section `
     align-items: center;
     justify-content: center; 
     background-color: ${theme.lightOrange};
-    background-image: url(https://static.dezeen.com/uploads/2013/07/dezeen_Zaha-Hadid-and-The-High-Line_ss_1.jpg)!important;
+    background-image: url(${HeroImg});
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-size: cover;
