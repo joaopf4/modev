@@ -3,7 +3,7 @@ import { NavColumn } from './styled'
 function DropDown({open, close}) {
 
   return (
-    <NavColumn open={true} >
+    <NavColumn open={open} >
       <ul>
         <li onClick={close}>Sobre nós</li>
         <li onClick={close}>Onde estamos</li>
