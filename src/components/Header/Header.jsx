@@ -1,7 +1,7 @@
 // import { useState } from 'react';
 import {  HeaderDiv } from './styled'
 // import DropDown from '../DropDown';
-import MenuBox from '../MenuBox';
+// import MenuBox from '../MenuBox';
 import MenuLine from '../MenuLine';
 
 function Header() {
@@ -12,7 +12,7 @@ function Header() {
 
   return (
     <HeaderDiv>
-      <MenuBox/>
+      {/* <MenuBox/> */}
       <MenuLine/>
     </HeaderDiv>
   );

@@ -6,12 +6,12 @@ export const SideBarDiv = styled.div`
   background-color: ${theme.primaryBlack};
   position: absolute;
   left: 0;
-  width: 30vmin;
+  width: 34vmin;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 10px 0px 10px;
+  padding: 40px 20px 0px 20px;
   img {
     width: 100%;
     /* min-width: 100px; */

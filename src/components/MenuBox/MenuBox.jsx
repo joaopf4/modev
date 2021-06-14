@@ -6,7 +6,7 @@ import {
   MenuIcon2,
   MenuIcon3,
 } from "./styled";
-import DropDown from "../DropDown";
+// import DropDown from "../DropDown";
 
 function MenuBox() {
   const [hambDisplay, setHambDisplay] = useState(false);
@@ -22,7 +22,7 @@ function MenuBox() {
           <MenuIcon2 open={hambDisplay}></MenuIcon2>
           <MenuIcon3 open={hambDisplay}></MenuIcon3>
         </HambIcon>
-        <DropDown open={hambDisplay} close={() => toogleHambDisplay()} />
+        {/* <DropDown open={hambDisplay} close={() => toogleHambDisplay()} /> */}
       </Menu>
     </>
   );
