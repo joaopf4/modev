@@ -16,7 +16,7 @@ function SideBar() {
           <i class="fab fa-instagram"></i>
         </IconLinks>
         <IconLinks>
-          <i class="fab fa-facebook"></i>
+          <i class="fab fa-facebook-f"></i>
         </IconLinks>
         <IconLinks>
           <i class="fab fa-whatsapp"></i>

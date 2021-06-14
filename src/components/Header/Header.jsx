@@ -12,7 +12,7 @@ function Header() {
 
   return (
     <HeaderDiv>
-      <MenuBox/>
+      {/* <MenuBox/> */}
       <MenuLine/>
     </HeaderDiv>
   );
