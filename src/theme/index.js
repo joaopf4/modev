@@ -24,6 +24,7 @@ export const theme = {
   secondaryGray: "#5a5a5a",
   primaryBlack: "#282828",
   mediumpacityBlue: "rgba(0, 67, 108, 0.64)",
+  lemonGreen: "#83e972",
   darkBlue: "#012940",
   lightBlue: "#4ea4d9",
   lightOrange: "#f3d7b6",

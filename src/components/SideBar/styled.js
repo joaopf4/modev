@@ -6,7 +6,7 @@ export const SideBarDiv = styled.div`
   background-color: ${theme.primaryBlack};
   position: absolute;
   left: 0;
-  width: 34vmin;
+  width: 24vmin;
   display: flex;
   flex-direction: column;
   align-items: center;
