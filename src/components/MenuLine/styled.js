@@ -6,6 +6,7 @@ export const InlineMenu = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
+  width: calc(100% - 24vmin);
   li {
       display: inline;
       font-weight: 600;
@@ -16,31 +17,34 @@ export const InlineMenu = styled.nav`
       text-shadow: 1px 2px 12px #000000;;
       :hover{
           cursor: pointer;
-          background-color: ${theme.secondaryGray};
+          color: ${theme.lemonGreen};
+          transform: translate(0px, -3px);
     }
   }
 
-  @media(max-width: 900px){
+  @media(max-width: 1270px){
     height: fit-content;
-    width: 100%;
+    width: calc(100% - 24vmin);
     flex-direction: column;
-    transition: background-color 1s, visibility 1s, opacity 2.5s linear;
-  ${ props => props.open && css `
-    opacity: 1;
-    visibility: visible;
-  `};
-      visibility: ${(props) => (props.open ? "hidden" : "visible")};
     ul {
       margin: 0;
+      transition: display 1s;
       padding-left: 0;
-      display: ${(props) => (props.open ? "none" : "grid")};
+      display: grid;
       width: 100%;
       opacity: 0.7;
       background-color: ${theme.primaryBlack};
+      transition: all 0.5s ease;
+      ${ props => props.open && css `
+        background-color: transparent;
+      `};
     }
     li {
       border-bottom: 2px solid gray;
       margin: 0;
+      transform: scaleY(${props => props.open ? "0" : "1"});
+      transform-origin: top;
+      transition: transform 0.5s ease; 
     }
   }
 `;
@@ -52,7 +56,14 @@ export const MenuIcon = styled.div`
   margin: 6px auto;
   transition: 0.4s;
   transform: rotate(${(props) => (!(props.open) ? "-45deg" : "")})
-    translate(${(props) => (!(props.open) ? "-9px, 6px" : "")});
+  translate(${(props) => (!(props.open) ? "-9px, 6px" : "")});
+  @media(max-width: 500px){
+  width: 24px;
+  height: 4px;
+  margin: 16% auto;
+  transform: rotate(${(props) => (!(props.open) ? "-45deg" : "")})
+  translate(${(props) => (!(props.open) ? "-6px,5px" : "")});
+  }
 `;
 export const MenuIcon2 = styled.div`
   width: 30px;
@@ -61,6 +72,10 @@ export const MenuIcon2 = styled.div`
   margin: 16% auto;
   transition: 0.4s;
   opacity: ${(props) => (!(props.open) ? "0" : "1")};
+  @media(max-width: 500px){
+    width: 24px;
+    height: 4px;
+  }
 `;
 export const MenuIcon3 = styled.div`
   width: 30px;
@@ -69,15 +84,34 @@ export const MenuIcon3 = styled.div`
   margin: 16% auto;
   transition: 0.4s;
   transform: rotate(${(props) => (!(props.open) ? "45deg" : "")})
-    translate(${(props) => (!(props.open) ? "-8px, -8px" : "")});
+  translate(${(props) => (!(props.open) ? "-8px, -8px" : "")});
+  @media(max-width: 500px){
+    width: 24px;
+    height: 4px;
+    transform: rotate(${(props) => (!(props.open) ? "45deg" : "")})
+     translate(${(props) => (!(props.open) ? "-5px, -8px" : "")});
+  }
 `;
 
 export const HambIcon = styled.div`
   display: none;
   cursor: pointer;
-  padding: 10px 3rem 10px 15px;
-  @media(max-width: 900px){
+  padding: 10px 15px;
+  margin-right: 3rem;
+  /* background-color: transparent; */
+  background-color: white;
+  opacity: 0.3;
+  top: -60px;
+  transition: opacity 0.4s;
+  ${ props => props.open && css `
+  transition: opacity 0.4s;
+  opacity: 0.7;
+  `}
+  @media(max-width: 1270px){
     display: block;
     position: absolute;
+  }
+  @media(max-width: 500px){
+    padding: 3.3px 10px;
   }
 `;

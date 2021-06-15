@@ -13,14 +13,14 @@ function MenuLine() {
     <>
       <InlineMenu open={hambDisplay}>
         <ul open={hambDisplay}>
-          <li>Início</li>
+          <li open={hambDisplay}>Início</li>
           <li>Sobre nós</li>
           <li>Empreendimentos</li>
           <li>Grupo</li>
           <li>Contato</li>
         </ul> 
       </InlineMenu>
-      <HambIcon onClick={toogleHambDisplay}>
+      <HambIcon open={hambDisplay} onClick={toogleHambDisplay}>
         <MenuIcon open={hambDisplay}></MenuIcon>
         <MenuIcon2 open={hambDisplay}></MenuIcon2>
         <MenuIcon3 open={hambDisplay}></MenuIcon3>
