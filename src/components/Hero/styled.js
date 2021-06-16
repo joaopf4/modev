@@ -3,12 +3,13 @@ import HeroImg from "../../assets/hero/main_full.jpg";
 import { theme } from "../../theme";
 
 export const HeroContainer = styled.section`
-  width: calc(100% - 24vmin);
+  width: calc(100% - 20vmin);
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding-right: 5vw;
   justify-content: center;
+  align-items: flex-end;
   background-color: ${theme.lightOrange};
   background-image: url(${HeroImg});
   background-repeat: no-repeat;
@@ -22,7 +23,8 @@ export const HeroTitle = styled.h1`
   color: white;
   font-size: 6rem;
   /* position: absolute; */
-  margin-right: 5vw;
+  margin-bottom: .5rem;
+  margin-top: .5rem;
   text-align: right;
   text-transform: uppercase;
   @media (max-width: 1290px) {
@@ -41,5 +43,5 @@ export const HeroTitle = styled.h1`
 
 export const HeroText = styled.h3`
     text-align: right;
-    margin-right: 5vw;
+    width: 70%;
 `
