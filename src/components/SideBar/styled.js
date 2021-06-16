@@ -36,6 +36,8 @@ export const IconLinks = styled.a`
   } 
   font-size: 4vmin;
   margin: 10px;
+  display: flex;
+  justify-content: center;
   :hover {
     text-decoration: none;
     cursor: pointer;
