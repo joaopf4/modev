@@ -3,10 +3,6 @@ import { SideBarDiv, SocialIcons, IconLinks } from './styled'
 import ModevLogo from '../../assets/logos/Logo-MODEV.png'
 
 function SideBar() {
-  // const [hambDisplay, setHambDisplay] = useState(false)
-  // const toogleHambDisplay = () => {
-  //   setHambDisplay((prevState) => !prevState)
-  // }
 
   return (
     <SideBarDiv>

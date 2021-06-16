@@ -6,15 +6,18 @@ export const SideBarDiv = styled.div`
   background-color: ${theme.primaryBlack};
   position: absolute;
   left: 0;
-  width: 24vmin;
+  width: 20vmin;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 20px 0px 20px;
+  padding: 40px 20px 60px 20px;
   img {
     width: 100%;
     /* min-width: 100px; */
+  }
+  @media(max-width: 600px){
+    padding: 40px 6px 60px 6px;
   }
 `;
 export const SocialIcons = styled.div`
@@ -31,8 +34,10 @@ export const IconLinks = styled.a`
     color: ${theme.secondaryGray}de;
     }
   } 
-  font-size: 6vmin;
+  font-size: 4vmin;
   margin: 10px;
+  display: flex;
+  justify-content: center;
   :hover {
     text-decoration: none;
     cursor: pointer;
@@ -41,7 +46,7 @@ export const IconLinks = styled.a`
     transform: translateY(3px);
     transition: 0.15s;
   }
-  @media (max-height: 440px) {
-    /* font-size: 1.9rem; */
+  @media(max-width: 600px){
+    font-size: 7vmin;
   }
 `;

@@ -4,9 +4,9 @@ import { theme } from "../../theme";
 export const InlineMenu = styled.nav`
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  width: calc(100% - 24vmin);
+  width: calc(100% - 20vmin);
   li {
       display: inline;
       font-weight: 600;
@@ -20,11 +20,15 @@ export const InlineMenu = styled.nav`
           color: ${theme.lemonGreen};
           transform: translate(0px, -3px);
     }
+    &:last-child {
+      margin-right: 5vw;
+      padding-right: 0;
+    }
   }
 
   @media(max-width: 1270px){
     height: fit-content;
-    width: calc(100% - 24vmin);
+    width: calc(100% - 20vmin);
     flex-direction: column;
     ul {
       margin: 0;
