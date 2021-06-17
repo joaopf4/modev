@@ -8,7 +8,6 @@ export const SectionContainer = styled.section `
     align-items: center;
     justify-content: center; 
     background-color: ${(props) => props.bgColor};
-    margin: 40px 0px;
 `
 export const SectionGrid = styled.div `
     display: grid;
