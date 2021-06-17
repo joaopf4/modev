@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import Header from '../../components/Header';
 import SideBar from '../../components/SideBar';
 import Hero from '../../components/Hero';
+import AboutUs from '../../components/AboutUs';
 import Section from '../../components/Section';
 import {theme} from '../../theme'
 
@@ -17,8 +18,8 @@ function Home() {
       <SideBar />
       <Header/>
       <Hero bgColor={theme.primaryBlack}/>
+      <AboutUs />
       <Section/>
-
     </Body>
   );
 }

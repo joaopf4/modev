@@ -10,7 +10,7 @@ export const HeroContainer = styled.section`
   padding-right: 5vw;
   justify-content: center;
   align-items: flex-end;
-  background-color: ${theme.lightOrange};
+  background-color: ${theme.primaryBlack};
   background-image: url(${HeroImg});
   background-repeat: no-repeat;
   background-size: cover;
