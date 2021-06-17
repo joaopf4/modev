@@ -21,6 +21,7 @@ export const AboutUsSection = styled.section`
   @media (max-width: 400px) {
     padding-bottom: 40px;
     background-attachment: fixed;
+    background-repeat: repeat-y;
   }
 `;
 export const Title = styled.h1`

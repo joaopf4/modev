@@ -3,6 +3,7 @@ import Header from '../../components/Header';
 import SideBar from '../../components/SideBar';
 import Hero from '../../components/Hero';
 import AboutUs from '../../components/AboutUs';
+import Empreendimentos from '../../components/Empreendimentos';
 import Section from '../../components/Section';
 import {theme} from '../../theme'
 
@@ -19,6 +20,10 @@ function Home() {
       <Header/>
       <Hero bgColor={theme.primaryBlack}/>
       <AboutUs />
+      <Empreendimentos />
+      <br/>
+      <br/>
+      <br/>
       <Section/>
     </Body>
   );
