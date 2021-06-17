@@ -44,4 +44,10 @@ export const HeroTitle = styled.h1`
 export const HeroText = styled.h3`
     text-align: right;
     width: 70%;
+    @media (max-width: 600px) {
+    font-size: 1rem;
+  }
+    @media (max-width: 400px) {
+    font-size: 0.8rem;
+  }
 `
