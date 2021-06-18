@@ -1,5 +1,4 @@
 import { InlineMenu, HambIcon, MenuIcon, MenuIcon2, MenuIcon3 } from './styled'
-// import MenuBox from '../MenuBox'
 import { useState } from 'react';
 
 function MenuLine() {
@@ -25,7 +24,6 @@ function MenuLine() {
         <MenuIcon2 open={hambDisplay}></MenuIcon2>
         <MenuIcon3 open={hambDisplay}></MenuIcon3>
       </HambIcon>
-      {/* <MenuBox/> */}
     </>
   );
 }
