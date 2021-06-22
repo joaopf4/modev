@@ -2,7 +2,6 @@ import { GrupoModevSection, Grupo, Social, Title, Logos, Paragrafo, InstaGrid, F
 import ModevLogo from "../../assets/logos/logo-MODEV-branco.png";
 import VertazLogo from "../../assets/logos/logo-VERTAZ-branco.png";
 import LexaLogo from "../../assets/logos/logo-lexa-branco.png";
-import Vista from "../../assets/hero/sobre_nos.png";
 
 function GrupoModev({ id, bgColor }) {
   return (
