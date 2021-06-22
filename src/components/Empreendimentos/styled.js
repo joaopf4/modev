@@ -4,7 +4,7 @@ import { theme } from "../../theme";
 export const EmpreendimentosSection = styled.section`
   width: 100%;
   height: fit-content;
-  min-height: 70vh;
+  max-height: 100vh;
   background-color: ${theme.primaryBlack};
   @media (max-width: 1290px) {
     background-size: 160%;
@@ -15,8 +15,8 @@ export const EmpreendimentosSection = styled.section`
 export const Grid = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-    @media (max-width: 800px) {
-      grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    @media (max-width: 901px) {
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     }
 `;
 
@@ -34,13 +34,15 @@ export const Card = styled.div`
   background-blend-mode: multiply;
   background-position: center;
   transition-duration: 0.5s;
+  @media (max-width: 900px) {
+    height: 50vh;
+  }
   :hover{
     background-color: white;
     transform: translateY(-10px);
     cursor: pointer;
   }
   &:hover img{
-    /* display: block; */
     opacity: 0.6;
   }
   &:active img{
@@ -54,15 +56,14 @@ export const Card = styled.div`
     position: relative;
     top: -30%;
     opacity: 0;
-    /* display: none; */
   }
   p{
     margin-top: 0;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     :first-of-type{
-      margin-bottom: 5px;
+      margin-bottom: 0.4rem;
     }
   }
 `;

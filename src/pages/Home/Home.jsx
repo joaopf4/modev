@@ -3,8 +3,9 @@ import Header from '../../components/Header';
 import SideBar from '../../components/SideBar';
 import Hero from '../../components/Hero';
 import AboutUs from '../../components/AboutUs';
+import GrupoModev from '../../components/GrupoModev';
 import Empreendimentos from '../../components/Empreendimentos';
-import Section from '../../components/Section';
+// import Section from '../../components/Section';
 import {theme} from '../../theme'
 
 const Body = styled.div `
@@ -21,10 +22,11 @@ function Home() {
       <Hero bgColor={theme.primaryBlack}/>
       <AboutUs />
       <Empreendimentos />
+      <GrupoModev />
       <br/>
       <br/>
       <br/>
-      <Section/>
+      {/* <Section/> */}
     </Body>
   );
 }

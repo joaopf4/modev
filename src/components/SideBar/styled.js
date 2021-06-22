@@ -6,18 +6,14 @@ export const SideBarDiv = styled.div`
   background-color: ${theme.primaryBlack};
   position: absolute;
   left: 0;
-  width: 20vmin;
+  width: 22vmin;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 20px 60px 20px;
+  padding: 1.8rem 0.8rem 3rem 0.8rem;
   img {
     width: 100%;
-    /* min-width: 100px; */
-  }
-  @media(max-width: 600px){
-    padding: 40px 6px 60px 6px;
   }
 `;
 export const SocialIcons = styled.div`
@@ -47,6 +43,6 @@ export const IconLinks = styled.a`
     transition: 0.15s;
   }
   @media(max-width: 600px){
-    font-size: 7vmin;
+    font-size: 3rem;
   }
 `;

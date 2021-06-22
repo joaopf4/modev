@@ -3,11 +3,11 @@ import HeroImg from "../../assets/hero/main_full.jpg";
 import { theme } from "../../theme";
 
 export const HeroContainer = styled.section`
-  width: calc(100% - 20vmin);
+  width: calc(100% - 22vmin);
   height: 100vh;
   display: flex;
   flex-direction: column;
-  padding-right: 5vw;
+  padding-right: 4rem;
   justify-content: center;
   align-items: flex-end;
   background-color: ${theme.primaryBlack};
@@ -21,33 +21,17 @@ export const HeroContainer = styled.section`
 
 export const HeroTitle = styled.h1`
   color: white;
-  font-size: 6rem;
+  font-size: 4rem;
   /* position: absolute; */
   margin-bottom: .5rem;
   margin-top: .5rem;
   text-align: right;
   text-transform: uppercase;
-  @media (max-width: 1290px) {
-    font-size: 5rem;
-  }
-  @media (max-width: 1160px) {
-    font-size: 4rem;
-  }
-  @media (max-width: 1040px) {
-    font-size: 3rem;
-  }
-  @media (max-width: 870px) {
-    font-size: 2rem;
-  }
 `;
 
 export const HeroText = styled.h3`
     text-align: right;
     width: 70%;
-    @media (max-width: 600px) {
-    font-size: 1rem;
-  }
-    @media (max-width: 400px) {
-    font-size: 0.8rem;
-  }
+    font-size: 1.1rem;
+
 `
