@@ -63,7 +63,7 @@ function GrupoModev({ id, bgColor }) {
             <input placeholder="E-MAIL*"/>
             <input placeholder="TELEFONE"/>
             <input placeholder="EMPRESA"/>
-            <input placeholder="MENSAGEM*"/>
+            <textarea placeholder="MENSAGEM*"/>
             <span>
               <Button>Enviar</Button>
             </span>

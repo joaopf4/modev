@@ -153,7 +153,7 @@ export const InfosContato = styled.div`
       width: 40%;
     }
     :nth-of-type(2){
-      input{
+      input {
         border-radius: 0.6rem;
         padding: 0.7rem;
         color: ${theme.secondaryGray};
@@ -163,9 +163,19 @@ export const InfosContato = styled.div`
         font-size: 1.2rem;
         height: 100%;
         margin: auto;
-        :last-of-type{
-          grid-area: 1 / 3 / 3 / 4;
-        }
+      }
+      textarea{
+        border-radius: 0.6rem;
+        padding: 0.7rem;
+        color: ${theme.secondaryGray};
+        width: 100%;
+        outline: none;
+        border: none;
+        font-size: 1.2rem;
+        height: 100%;
+        margin: auto;
+        grid-area: 1 / 3 / 3 / 4;
+        resize: none;
       }
       form{
         display: grid;
