@@ -5,7 +5,6 @@ import Hero from '../../components/Hero';
 import AboutUs from '../../components/AboutUs';
 import GrupoModev from '../../components/GrupoModev';
 import Empreendimentos from '../../components/Empreendimentos';
-import Contato from '../../components/Contato';
 import {theme} from '../../theme'
 
 const Body = styled.div `
@@ -23,7 +22,6 @@ function Home() {
       <AboutUs />
       <Empreendimentos />
       <GrupoModev />
-      {/* <Contato/> */}
     </Body>
   );
 }

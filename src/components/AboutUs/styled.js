@@ -8,7 +8,7 @@ export const AboutUsSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem;
+  padding: 3rem 3rem 5rem 3rem;
   background-color: ${theme.primaryBlack};
   background-image: url(${Texture});
   background-repeat: no-repeat;
