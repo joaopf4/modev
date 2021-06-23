@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import Texture from "../../assets/texture/textura-linhas-invertida.png";
+import TextureInvertida from "../../assets/texture/textura-linhas-invertida.png";
+import Texture from "../../assets/texture/textura-linhas.png";
 import { theme } from "../../theme";
 
 export const GrupoModevSection = styled.section`
@@ -10,18 +11,14 @@ export const GrupoModevSection = styled.section`
   align-items: center;
   padding: 3rem;
   background-color: ${theme.primaryBlack};
-  background-image: url(${Texture});
+  background-image: url(${TextureInvertida}), url(${Texture});
   background-repeat: no-repeat;
-  background-size: 130%;
-  background-position: top;
+  background-size: 110%, 110%;
+  background-position: center top -410px, center bottom -30rem;
   position: relative;
-  @media (max-width: 1290px) {
-    background-size: 160%;
-  }
   @media (max-width: 400px) {
     padding-bottom: 40px;
-    background-attachment: fixed;
-    background-repeat: repeat-y;
+    background-position: top, center bottom -30rem;
   }
 `;
 export const Paragrafo = styled.div`
@@ -37,6 +34,7 @@ export const Title = styled.h1`
   text-transform: uppercase;
   font-size: 3.6rem;
   z-index: 1;
+  margin-top: 5rem;
   span {
     color: ${theme.lemonGreen};
   }
@@ -48,7 +46,7 @@ export const Grupo = styled.h2`
   text-transform: uppercase;
   letter-spacing: 2.6rem;
   left: -20px;
-  opacity: 0.5;
+  opacity: 0.4;
   margin-top: 1em;
   @media (max-width: 360px) {
     letter-spacing: 2rem;
@@ -57,9 +55,18 @@ export const Grupo = styled.h2`
 
 export const Social = styled(Grupo)`
   position: absolute;
-  top: 3.6em;
+  top: 3.8em;
   @media (max-width: 360px) {
     letter-spacing: 2rem;
+  }
+`;
+export const Contato = styled(Grupo)`
+  position: absolute;
+  top: 10.6em;
+  letter-spacing: 1.6rem;
+  z-index: 0;
+  @media (max-width: 360px) {
+    letter-spacing: 1rem;
   }
 `;
 
@@ -113,15 +120,15 @@ export const InstaGrid = styled.div`
   }
 `;
 
-export const FollowUs = styled.button`
+export const Button = styled.button`
   width: fit-content;
   height: fit-content;
   outline: none;
   border: none;
-  border-radius: 10px;
-  font-size: 1.6rem;
+  border-radius: 0.6rem;
+  font-size: 1.2rem;
   background-color: ${theme.lemonGreen};
-  padding: 0.8rem;
+  padding: 0.7rem;
   text-transform: uppercase;
   transition: 0.2s;
   :hover{
@@ -133,4 +140,83 @@ export const FollowUs = styled.button`
     transform: translateY(3px);
   }
 
+`;
+export const InfosContato = styled.div`
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  width: 90%;
+  margin-bottom: 5rem;
+  div{
+    height: 10rem;
+    :first-of-type{
+      width: 40%;
+    }
+    :nth-of-type(2){
+      input{
+        border-radius: 0.6rem;
+        padding: 0.7rem;
+        color: ${theme.secondaryGray};
+        width: 100%;
+        outline: none;
+        border: none;
+        font-size: 1.2rem;
+        height: 100%;
+        margin: auto;
+        :last-of-type{
+          grid-area: 1 / 3 / 3 / 4;
+        }
+      }
+      form{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        gap: 1rem;
+        height: 8rem;
+        justify-content: flex-end;
+        span{
+          grid-area: 3 / 3 / 4 / 4; 
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+          height: 3rem;
+        }
+      }
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    p{
+      line-height: 1.4rem;
+      padding-right: 0.5rem;
+      span{
+        color: ${theme.lemonGreen};
+        cursor: pointer;
+      }
+    }
+  }
+`;
+
+export const Footer = styled.footer`
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 5rem;
+  gap: 3rem;
+  img{
+    height: 12rem;
+  }
+  div{
+    background-color: ${theme.secondaryGray};
+    opacity: 0.6;
+    height: 12rem;
+    width: inherit; 
+  }
+`;
+export const ByDestileria = styled.p`
+    font-size: 1.6rem;
 `;

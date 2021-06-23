@@ -1,5 +1,6 @@
-import { GrupoModevSection, Grupo, Social, Title, Logos, Paragrafo, InstaGrid, FollowUs } from "./styled";
-import ModevLogo from "../../assets/logos/logo-MODEV-branco.png";
+import { GrupoModevSection, Grupo, Social, Contato, ByDestileria, Title, Footer, Logos, Paragrafo, InstaGrid, Button, InfosContato } from "./styled";
+import ModevLogoBranco from "../../assets/logos/logo-MODEV-branco.png";
+import ModevLogo from "../../assets/logos/logo-MODEV.png";
 import VertazLogo from "../../assets/logos/logo-VERTAZ-branco.png";
 import LexaLogo from "../../assets/logos/logo-lexa-branco.png";
 
@@ -15,7 +16,7 @@ function GrupoModev({ id, bgColor }) {
         </Paragrafo>
       <Logos>
 
-          <img alt="ModevLogo" src={ModevLogo}/>
+          <img alt="ModevLogo" src={ModevLogoBranco}/>
 
           <img alt="VertazLogo" src={VertazLogo}/>
 
@@ -37,13 +38,46 @@ function GrupoModev({ id, bgColor }) {
         <span></span>
         <span></span>
         <span>
-          <FollowUs>
+          <Button>
             Nos siga!
-          </FollowUs>
+          </Button>
         </span>
       </InstaGrid>
+      <Title>Mande uma  <span>mensagem</span></Title>
+      <Contato>CONTATO</Contato>
+      <InfosContato>
+        <div>
+          <p>
+            +55 (15) 9 9999.9999<br/>
+            +55 (15) 9 9999.9999<br/>
+            <span>info@modev.com.br<br/></span>
+            Rua São João das Rosas,
+            Centro, Campinas<br/>
+            São Paulo - Brasil<br/>
+          </p>
+        </div>
 
+        <div>
+          <form>
+            <input placeholder="NOME*"/>
+            <input placeholder="E-MAIL*"/>
+            <input placeholder="TELEFONE"/>
+            <input placeholder="EMPRESA"/>
+            <input placeholder="MENSAGEM*"/>
+            <span>
+              <Button>Enviar</Button>
+            </span>
+          </form>
+        </div>
 
+      </InfosContato>
+      <Footer>
+        <img src={ModevLogo} alt="Modev"/>
+        <div></div>
+      </Footer>
+
+      <ByDestileria>by DESTILERIA DE IDEIAS</ByDestileria>
+      
 
     </GrupoModevSection>
   );

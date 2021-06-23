@@ -4,7 +4,7 @@ import { theme } from "../../theme";
 export const EmpreendimentosSection = styled.section`
   width: 100%;
   height: fit-content;
-  max-height: 100vh;
+  /* max-height: 100vh; */
   background-color: ${theme.primaryBlack};
   @media (max-width: 1290px) {
     background-size: 160%;

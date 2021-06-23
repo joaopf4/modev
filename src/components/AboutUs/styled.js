@@ -26,6 +26,7 @@ export const Title = styled.h1`
   text-transform: uppercase;
   font-size: 3.6rem;
   z-index: 1;
+  margin-top: 5rem;
   span {
     color: ${theme.lemonGreen};
   }
@@ -38,7 +39,7 @@ export const Sobre = styled.h2`
   text-transform: uppercase;
   letter-spacing: 2.6rem;
   left: -20px;
-  opacity: 0.5;
+  opacity: 0.4;
   margin-top: 1em;
 `;
 

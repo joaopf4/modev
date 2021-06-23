@@ -1,6 +1,6 @@
 
 import { SideBarDiv, SocialIcons, IconLinks } from './styled'
-import ModevLogo from '../../assets/logos/Logo-MODEV.png'
+import ModevLogo from '../../assets/logos/logo-MODEV.png'
 
 function SideBar() {
 
