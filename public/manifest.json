@@ -1,6 +1,6 @@
 {
-  "short_name": "Lexa Engenharia",
-  "name": "Create React App Sample",
+  "short_name": "Modev",
+  "name": "Modev Empreendimentos",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,12 +8,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "link_thumb",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "link_thumb.png",
       "type": "image/png",
       "sizes": "512x512"
     }

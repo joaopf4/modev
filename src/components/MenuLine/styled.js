@@ -7,22 +7,40 @@ export const InlineMenu = styled.nav`
   justify-content: flex-end;
   align-items: center;
   width: calc(100% - 22vmin);
-  li {
-    display: inline;
-    font-weight: 600;
-    padding: 0.6rem;
-    margin: 0.1rem;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    text-shadow: 1px 2px 12px #000000;
-    :hover {
-      cursor: pointer;
-      color: ${theme.lemonGreen};
-      transform: translate(0px, -3px);
+  transition: all 0.5s ease;
+  a {
+      display: inline-block;
+    li{
+      display: inline-block;
+      transition: all 0.5s ease;
+      font-weight: 600;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      text-shadow: 1px 2px 12px #000000;
+      :hover {
+        cursor: pointer;
+        color: ${theme.lemonGreen};
+        transform: translate(0px, -3px);
+      }
     }
-    &:last-child {
-      margin-right: 4rem;
-      padding-right: 0;
+      padding: 0.5rem 0.8rem;
+      transition: all 0.5s ease;
+    @media (min-width: 1270px) {
+      :last-of-type{
+        margin-right: 4rem;
+        padding-right: 0rem;
+      }
+      :hover {
+        cursor: pointer;
+        li{
+          color: ${theme.lemonGreen};
+          transform: translate(0px, 3px);
+        }
+      }
+      :active{
+        box-shadow: 0px 0px 0px ${theme.primaryBlack};
+        transform: scale(1.1);
+      }
     }
   }
 
@@ -30,6 +48,8 @@ export const InlineMenu = styled.nav`
     height: fit-content;
     width: calc(100% - 22vmin);
     flex-direction: column;
+    position: fixed;
+    z-index: 4;
     ul {
       margin: 0;
       transition: display 1s;
@@ -42,17 +62,27 @@ export const InlineMenu = styled.nav`
       ${(props) =>
         props.open &&
         css`
-          background-color: transparent;
-        `};
+        background-color: transparent;
+      `};
     }
-    li {
-      border-bottom: 2px solid gray;
+     a, li {
       margin: 0;
       transform: scaleY(${(props) => (props.open ? "0" : "1")});
       transform-origin: top;
       transition: transform 0.5s ease;
       &:last-child {
         margin-right: 0;
+      }
+    }
+    a{
+      transition: all 0.5s ease;
+      border-bottom: 2px solid gray;
+      :hover {
+        cursor: pointer;
+        background-color: ${theme.secondaryGray};
+        li{
+          color: ${theme.lemonGreen};
+        }
       }
     }
   }
@@ -121,7 +151,9 @@ export const HambIcon = styled.div`
   }
   @media (max-width: 1270px) {
     display: block;
-    position: absolute;
+    position: fixed;
+    top: 2.7rem;
+    z-index: 4;
   }
   @media (max-width: 500px) {
     padding: 7.3px 10px;

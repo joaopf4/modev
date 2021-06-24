@@ -8,20 +8,17 @@ function SideBar() {
     <SideBarDiv>
       <img src={ModevLogo} alt="Modev"/>
       <SocialIcons>
-        <IconLinks>
+        <IconLinks href="http://www.instagram.com/modev" target="blank">
           <i class="fab fa-instagram"></i>
         </IconLinks>
-        <IconLinks>
+        <IconLinks href="http://www.facebook.com/modev" target="blank">
           <i class="fab fa-facebook-f"></i>
         </IconLinks>
-        <IconLinks>
+         <IconLinks href="https://wa.me/552196312XXXX" target="blank">
           <i class="fab fa-whatsapp"></i>
         </IconLinks>
-        <IconLinks>
+         <IconLinks href="http://www.facebook.com/modev" target="blank">
           <i class="fab fa-youtube"></i>
-        </IconLinks>
-        <IconLinks>
-          <i class="fab fa-facebook-messenger"></i>
         </IconLinks>
       </SocialIcons>
     </SideBarDiv>

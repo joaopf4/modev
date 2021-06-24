@@ -4,7 +4,7 @@ function Hero({id}) {
 
   return (
     <HeroContainer id={id}>
-        <HeroTitle>
+        <HeroTitle id="inicio">
           Título do Banner
         </HeroTitle>
         <HeroText>

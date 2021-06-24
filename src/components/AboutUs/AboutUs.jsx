@@ -8,7 +8,7 @@ function AboutUs({ id, bgColor }) {
   return (
     <AboutUsSection id={id} bgColor={bgColor}>
       <Sobre>SOBRE</Sobre>
-      <Title>Sobre <span>nós</span></Title>
+      <Title id="sobreNos">Sobre <span>nós</span></Title>
       <Grid>
         <div>
           <p>

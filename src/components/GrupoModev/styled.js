@@ -63,10 +63,13 @@ export const Social = styled(Grupo)`
 export const Contato = styled(Grupo)`
   position: absolute;
   top: 10.6em;
-  letter-spacing: 1.6rem;
   z-index: 0;
+  letter-spacing: 1.2rem;
+  @media (max-width: 680px) {
+  letter-spacing: 0.8rem;
+  }
   @media (max-width: 360px) {
-    letter-spacing: 1rem;
+    letter-spacing: 0.6rem;
   }
 `;
 

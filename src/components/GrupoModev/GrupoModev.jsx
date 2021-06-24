@@ -8,7 +8,7 @@ function GrupoModev({ id, bgColor }) {
   return (
     <GrupoModevSection id={id} bgColor={bgColor}>
       <Grupo>Grupo</Grupo>
-      <Title>Grupo <span>Modev</span></Title>
+      <Title id="grupoModev">Grupo <span>Modev</span></Title>
         <Paragrafo>
           <p>
           Phasellus molestie quam tortor, nec   cursus. Phasellus molestie quam tortor, nec   cursus Phasellus molestie quam tortor, nec   cursus . Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur interdum, era, sem massa imperdiet eros, in rhoncus nullna in diam. Nam facilisis ac nisl et dapibus. Maecenas orci augue. Pellentesque finibus suscipit suscipit. In hac habitasse platea. Duis arcu a  aliquet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur interdum, era, sem massa imperdiet.
@@ -43,7 +43,7 @@ function GrupoModev({ id, bgColor }) {
           </Button>
         </span>
       </InstaGrid>
-      <Title>Mande uma  <span>mensagem</span></Title>
+      <Title id="contato">Mande uma  <span>mensagem</span></Title>
       <Contato>CONTATO</Contato>
       <InfosContato>
         <div>

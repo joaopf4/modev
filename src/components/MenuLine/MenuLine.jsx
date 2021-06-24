@@ -1,5 +1,6 @@
-import { InlineMenu, HambIcon, MenuIcon, MenuIcon2, MenuIcon3 } from './styled'
 import { useState } from 'react';
+import { InlineMenu, HambIcon, MenuIcon, MenuIcon2, MenuIcon3 } from './styled'
+import { Link } from "react-scroll";
 
 function MenuLine() {
   const [hambDisplay, setHambDisplay] = useState(true);
@@ -12,11 +13,61 @@ function MenuLine() {
     <>
       <InlineMenu open={hambDisplay}>
         <ul open={hambDisplay}>
-          <li open={hambDisplay}>Início</li>
-          <li>Sobre nós</li>
-          <li>Empreendimentos</li>
-          <li>Grupo</li>
-          <li>Contato</li>
+          <Link
+            activeClass="active"
+            to="inicio"
+            spy={true}
+            smooth={true}
+            offset={-400}
+            duration={500}
+            onClick={toogleHambDisplay}
+          >
+            <li>Início</li>
+          </Link>
+          <Link
+            activeClass="active"
+            to="sobreNos"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+            onClick={toogleHambDisplay}
+          >
+            <li>Sobre nós</li>
+          </Link>
+          <Link
+            activeClass="active"
+            to="empreendimentos"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+            onClick={toogleHambDisplay}
+          >
+            <li>Empreendimentos</li>
+          </Link>
+          <Link
+            activeClass="active"
+            to="grupoModev"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+            onClick={toogleHambDisplay}
+          >
+            <li>Grupo</li>
+          </Link>
+          <Link
+            activeClass="active"
+            to="contato"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+            onClick={toogleHambDisplay}
+          >
+            <li>Contato</li>
+          </Link>
         </ul> 
       </InlineMenu>
       <HambIcon open={hambDisplay} onClick={toogleHambDisplay}>

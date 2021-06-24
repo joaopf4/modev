@@ -7,7 +7,7 @@ import IconeMais from "../../assets/icones/icone-mais-2.png";
 
 function Empreendimentos() {
   return (
-    <EmpreendimentosSection>
+    <EmpreendimentosSection id="empreendimentos">
       <Grid>
         <Card bgImg={Imperatriz}>
           <img alt="Ver mais" src={IconeMais} />

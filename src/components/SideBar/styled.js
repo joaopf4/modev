@@ -30,6 +30,7 @@ export const IconLinks = styled.a`
     color: ${theme.secondaryGray}de;
     }
   } 
+  text-decoration: none;
   font-size: 4vmin;
   margin: 10px;
   display: flex;
