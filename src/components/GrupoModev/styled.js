@@ -40,7 +40,7 @@ export const Title = styled.h1`
   }
 `;
 export const Grupo = styled.h2`
-  font-size: 10rem;
+  font-size: 9rem;
   color: ${theme.secondaryGray};
   position: absolute;
   text-transform: uppercase;
@@ -55,14 +55,14 @@ export const Grupo = styled.h2`
 
 export const Social = styled(Grupo)`
   position: absolute;
-  top: 3.8em;
+  top: 4.8em;
   @media (max-width: 360px) {
     letter-spacing: 2rem;
   }
 `;
 export const Contato = styled(Grupo)`
   position: absolute;
-  top: 10.6em;
+  top: 11.8em;
   z-index: 0;
   letter-spacing: 1.2rem;
   @media (max-width: 680px) {
@@ -166,8 +166,10 @@ export const InfosContato = styled.div`
         font-size: 1.2rem;
         height: 100%;
         margin: auto;
+        opacity: 0.7;
       }
       textarea{
+        opacity: 0.7;
         border-radius: 0.6rem;
         padding: 0.7rem;
         color: ${theme.secondaryGray};

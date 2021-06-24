@@ -33,7 +33,7 @@ export const Title = styled.h1`
 `;
 
 export const Sobre = styled.h2`
-  font-size: 10rem;
+  font-size: 9rem;
   color: ${theme.secondaryGray};
   position: absolute;
   text-transform: uppercase;
