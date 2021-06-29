@@ -24,7 +24,7 @@ export const AboutUsSection = styled.section`
 `;
 export const Title = styled.h1`
   text-transform: uppercase;
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   z-index: 1;
   margin-top: 5rem;
   span {

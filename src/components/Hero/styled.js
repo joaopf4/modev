@@ -7,16 +7,30 @@ export const HeroContainer = styled.section`
   height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
   padding-right: 4rem;
   justify-content: center;
+  overflow: hidden;
   align-items: flex-end;
-  background-color: ${theme.primaryBlack};
+  /* background-color: ${theme.primaryBlack};
   background-image: url(${HeroImg});
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: top; */
   align-self: flex-end;
+  /* opacity: .8; */
   word-wrap: break-word;
+  z-index: 0;
+
+  span{
+    :last-of-type{
+      position: absolute;
+      width: calc(100% - 22vmin);
+      top: 35%;
+      height: fit-content;
+      z-index: 0;
+    }
+  }
 `;
 
 export const HeroTitle = styled.h1`
@@ -24,14 +38,17 @@ export const HeroTitle = styled.h1`
   font-size: 4rem;
   /* position: absolute; */
   margin-bottom: .5rem;
+  /* top: 30%; */
   margin-top: .5rem;
   text-align: right;
   text-transform: uppercase;
 `;
 
-export const HeroText = styled.h3`
+export const HeroText = styled.p`
+    /* top: 40%; */
     text-align: right;
-    width: 70%;
-    font-size: 1.1rem;
+    /* width: 70%; */
+    font-size: 1.4rem;
+    /* position: absolute; */
 
 `

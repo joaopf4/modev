@@ -32,7 +32,7 @@ export const Paragrafo = styled.div`
 `;
 export const Title = styled.h1`
   text-transform: uppercase;
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   z-index: 1;
   margin-top: 5rem;
   span {
@@ -220,7 +220,7 @@ export const Footer = styled.footer`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 5rem;
+  margin: 5rem 0 5rem;
   gap: 3rem;
   img{
     height: 12rem;

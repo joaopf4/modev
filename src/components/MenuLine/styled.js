@@ -52,6 +52,8 @@ export const InlineMenu = styled.nav`
     z-index: 4;
     ul {
       margin: 0;
+      position: absolute;
+      top: 0rem;
       transition: display 1s;
       padding-left: 0;
       display: grid;
@@ -63,6 +65,7 @@ export const InlineMenu = styled.nav`
         props.open &&
         css`
         background-color: transparent;
+        visibility: hidden;
       `};
     }
      a, li {
