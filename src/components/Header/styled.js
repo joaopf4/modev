@@ -8,5 +8,5 @@ export const HeaderDiv = styled.header`
   height: 116px;
   display: flex;
   justify-content: flex-end;
-  z-index: 1;
+  z-index: 3;
 `;
