@@ -12,8 +12,8 @@ export const HeroContainer = styled.section`
   justify-content: center;
   overflow: hidden;
   align-items: flex-end;
-  /* background-color: ${theme.primaryBlack};
-  background-image: url(${HeroImg});
+  background-color: ${theme.primaryBlack};
+  /*background-image: url(${HeroImg});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top; */
@@ -25,6 +25,10 @@ export const HeroContainer = styled.section`
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    background-blend-mode: lighten; 
+    div{
+      opacity: 0.9;
+    }
   }
   span{
     :last-of-type{

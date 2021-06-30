@@ -24,6 +24,7 @@ function Hero() {
         showBullets
         slideDuration={0.4}
         bgColor={'#282828'}
+        onStartSlide={true}
       >
       </SimpleImageSlider>
       <span>
