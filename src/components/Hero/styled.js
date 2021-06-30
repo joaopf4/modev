@@ -21,7 +21,11 @@ export const HeroContainer = styled.section`
   /* opacity: .8; */
   word-wrap: break-word;
   z-index: 0;
-
+  div{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
   span{
     :last-of-type{
       position: absolute;
